@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
     }
 
     nav {
-      display: center;
+      display: flex;
       justify-content: space-between;
       padding: 0 24px;
       border-bottom: 1px solid var(--very-light-pink);
@@ -51,7 +52,8 @@
       align-items: center;
       height: 60px;
     }
-.navbar-left {
+
+    .navbar-left {
       display: flex;
 
     }
@@ -78,7 +80,7 @@
 
     .navbar-email {
       color: var(--very-light-pink);
-      font-size:var(--sm);
+      font-size: var(--sm);
       margin-right: 12px;
     }
 
@@ -113,7 +115,7 @@
       .navbar-email {
         display: none;
       }
-  }          
+    }
   </style>
 </head>
 
@@ -149,6 +151,7 @@
     <div class="navbar-right">
       <ul>
         <li class="navbar-email">Isa@example.com</li>
+        <li class="email-nav"><img src="./icons/flechita.svg" alt=""> </li>
         <li class="navbar-shopping-cart">
           <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
           <div>2</div>
@@ -157,4 +160,5 @@
     </div>
   </nav>
 </body>
+
 </html>
